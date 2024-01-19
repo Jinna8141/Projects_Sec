@@ -1,5 +1,3 @@
- **Here's a README file for the Python password manager project, incorporating best practices and addressing potential issues:**
-
 **# Password Manager**
 
 **This Python-based password manager securely stores and manages your passwords.**
@@ -27,7 +25,7 @@
 
 1. **Register:** Create a new user account with a master password.
 2. **Login:** Access your password vault using your master password.
-3. **Add password:** Save a new website and password to the vault.
+3. **Add password:** Save a new website and password to the vault or password created with password generator.
 4. **Get password:** Retrieve a saved password and copy it to the clipboard.
 5. **View saved websites:** List all websites with stored passwords.
 6. **Quit:** Exit the program.
