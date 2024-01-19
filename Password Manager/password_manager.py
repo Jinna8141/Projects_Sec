@@ -178,7 +178,7 @@ while True:
            password_choice = input("Enter your choice: ")
            if password_choice == '1':  # If a user wants to add a password
                website = input("Enter website: ")
-               passwordur = getpass.getpass("Enter password or Enter RD for random secure password")
+               passwordur = getpass.getpass("Enter password or Enter RD for random secure password: ")
                if passwordur == 'RD':
                    password=create_password()
                    add_password(website, password)
