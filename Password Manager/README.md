@@ -1,63 +1,53 @@
-# Beginner-Projects
+# Password Manager
 
-***************************************************************************************************************************************
-**Project 1**
+This Python-based password manager securely stores and manages your passwords.
+Features
 
-Python Password Generator
+    Secure encryption: Protects your passwords using Fernet encryption.
+    User-friendly interface: Easy to use with clear prompts and options.
+    Registration and login: Authenticates users for enhanced security.
+    Add, retrieve, and view passwords: Efficiently manages your passwords.
+    Password copying: Conveniently copies passwords to the clipboard.
 
-This script generates a random password based on user input for the number of words, numbers, and special characters.
+Installation
 
-Features:
+    Install required libraries:
+    Bash
 
-    Generates strong passwords with a mix of words, numbers, and special characters.
-    Allows users to customize the length and complexity of the password.
-    Includes a list of common words and special characters by default.
-    Can be easily extended to use custom word lists.
+    pip install cryptography pyperclip
 
-Requirements:
+    Use code with caution. Learn more
 
-    Python 3.x
-
-Getting Started:
-
-    Download the script and save it as password_generator.py.
-    Open a terminal window and navigate to the directory where you saved the script.
-    Run the script using the following command:
-
+Run the program:
 Bash
 
-python password_generator.py
+python password_manager.py
 
 Use code with caution. Learn more
 
-Usage:
+Usage
 
-    The script will prompt you for the number of words, numbers, and special characters you want to include in your password.
-    Enter the desired values and press Enter.
-    The script will generate a random password based on your input and display it in the terminal.
+    Register: Create a new user account with a master password.
+    Login: Access your password vault using your master password.
+    Add password: Save a new website and password to the vault.
+    Get password: Retrieve a saved password and copy it to the clipboard.
+    View saved websites: List all websites with stored passwords.
+    Quit: Exit the program.
 
-Customizing the Word List:
+Security
 
-    By default, the script uses a list of common words included in the file words.txt.
-    You can download an updated word list from the following URL:
+    Never share your master password.
+    Use a strong and unique master password.
+    Consider storing the encryption key file securely offline.
 
-    https://raw.githubusercontent.com/dwyl/english-words/master/words.txt
+Disclaimer
 
-    You can also use your own custom word list. Simply replace the words.txt file with your own list.
+This password manager is a personal project and is not intended for use in high-security environments. Use at your own risk.
 
-Adding Additional Features:
+## Contributions
 
-    You can easily extend the script to include additional features, such as:
-        Support for uppercase and lowercase characters.
-        Exclusion of specific characters or words.
-        Minimum and maximum password length.
-        Strength meter to indicate the strength of the generated password.
+We welcome contributions to improve this project! Please follow the guidelines in the CONTRIBUTING.md file.
 
-Contributing:
+## License
 
-    We welcome contributions to improve this script. Feel free to fork the repository and submit pull requests with your improvements.
-
-License:
-
-    This script is released under the MIT license.
-***************************************************************************************************************************************
+This project is licensed under the MIT License. See the LICENSE file for details.
