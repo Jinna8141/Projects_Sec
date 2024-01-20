@@ -1,63 +1,47 @@
-# Beginner-Projects
+ **# README.md**
 
-***************************************************************************************************************************************
-**Project 1**
+**Zip Password Cracker**
 
-Python Password Generator
+This Python script attempts to crack the password of a ZIP file using a provided wordlist.
 
-This script generates a random password based on user input for the number of words, numbers, and special characters.
+**Installation:**
 
-Features:
+1. **Install Python:** Ensure you have Python installed on your system. Download it from [https://www.python.org/downloads/](https://www.python.org/downloads/) if needed.
+2. **Install Required Libraries:** 
+   - Open a terminal or command prompt.
+   - Install the required libraries using pip:
+   ```bash
+   pip install zipfile tqdm
+   ```
 
-    Generates strong passwords with a mix of words, numbers, and special characters.
-    Allows users to customize the length and complexity of the password.
-    Includes a list of common words and special characters by default.
-    Can be easily extended to use custom word lists.
+**Usage:**
 
-Requirements:
+1. **Download the script:** Clone this repository or download the script file.
+2. **Prepare Files:**
+   - Place the ZIP file you want to crack in the same directory as the script.
+   - Create a wordlist file containing potential passwords, one password per line. Save it as "custom_wordlist.txt" in the same directory.
+3. **Run the script:** Open a terminal or command prompt in the script's directory and execute the following command:
+   ```bash
+   python zip_cracker.py
+   ```
 
-    Python 3.x
+**Output:**
 
-Getting Started:
+The script will display:
 
-    Download the script and save it as password_generator.py.
-    Open a terminal window and navigate to the directory where you saved the script.
-    Run the script using the following command:
+- The total number of passwords to test.
+- A progress bar indicating the cracking progress.
+- If the password is found, it will be printed to the console.
+- If the password is not found, a message will be displayed suggesting to try a different wordlist.
 
-Bash
+**Ethical Considerations:**
 
-python password_generator.py
+- Use this script only for ethical purposes, such as recovering your own lost passwords.
+- Do not attempt to crack passwords of files you do not have permission to access.
+- Be aware that password cracking can be time-consuming, especially for strong passwords or large wordlists.
 
-Use code with caution. Learn more
+**Additional Notes:**
 
-Usage:
-
-    The script will prompt you for the number of words, numbers, and special characters you want to include in your password.
-    Enter the desired values and press Enter.
-    The script will generate a random password based on your input and display it in the terminal.
-
-Customizing the Word List:
-
-    By default, the script uses a list of common words included in the file words.txt.
-    You can download an updated word list from the following URL:
-
-    https://raw.githubusercontent.com/dwyl/english-words/master/words.txt
-
-    You can also use your own custom word list. Simply replace the words.txt file with your own list.
-
-Adding Additional Features:
-
-    You can easily extend the script to include additional features, such as:
-        Support for uppercase and lowercase characters.
-        Exclusion of specific characters or words.
-        Minimum and maximum password length.
-        Strength meter to indicate the strength of the generated password.
-
-Contributing:
-
-    We welcome contributions to improve this script. Feel free to fork the repository and submit pull requests with your improvements.
-
-License:
-
-    This script is released under the MIT license.
-***************************************************************************************************************************************
+- Consider using more comprehensive wordlists for better cracking chances.
+- For stronger ZIP encryption, this script may not be effective.
+- Explore alternative password cracking tools for complex scenarios.
