@@ -39,4 +39,4 @@
 
 **## License:**
 
-- Choose a license: [https://choosealicense.com/](https://choosealicense.com/) and add it to the repository.
+-MIT License.
